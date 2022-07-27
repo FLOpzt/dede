@@ -3,11 +3,12 @@ import 'dart:math';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: Scaffold(
       backgroundColor: Colors.red,
       appBar: AppBar(
         centerTitle: true,
-        title: Text('DéDé'),
+        title: Text('DéDéDéDé'),
         backgroundColor: Colors.red,
       ),
       body: DiceGame(),
@@ -37,7 +38,7 @@ class _DiceGameState extends State<DiceGame> {
       child: Row(
         children: [
           Expanded(
-            child: FlatButton(
+            child: MaterialButton(
               onPressed: () {
                 rolldices();
               },
@@ -45,7 +46,7 @@ class _DiceGameState extends State<DiceGame> {
             ),
           ),
           Expanded(
-            child: FlatButton(
+            child: MaterialButton(
               onPressed: () {
                 rolldices();
               },
